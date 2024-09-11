@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(cors());
 
 // Replace with your Cashfree credentials
-const appId = '3353385de4314f5b120ed3e13e833533';
-const secretKey = 'cfsk_ma_test_8329041d4527943b8b78a83af9c99683_fba75044';
+const appId = process.env.APP_ID;;
+const secretKey = process.env.SECRET_KEY;
 
 const headers = {
   accept: 'application/json',
