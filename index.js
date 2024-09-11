@@ -8,6 +8,8 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
+require('dotenv').config();
+
 // Replace with your Cashfree credentials
 const appId = process.env.APP_ID;;
 const secretKey = process.env.SECRET_KEY;
